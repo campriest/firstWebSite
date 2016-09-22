@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Class Final</title>
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script langugae="javascript" type="text/javascript" src="paperjs/dist/paper-full.js"></script>
+
+
+<link rel="stylesheet" href="style.css" media="all" title="no title" charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kanit:400,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<div id="background">
+    <video autoplay loop>
+      <source src="videoplayback.mp4" type="video/mp4">
+      <source src="videoplayback.ogg" type="videoplayback.ogg">
+    </video>
+</div>
+
+<div id ="backgroundTwo">
+
+     <source src="videoplayback_1.mp4" type="video/mp4">
+     <source src="videoplayback_1.ogg" type="videoplayback_1.ogg">
+</div>
+
+
+
+
+
+
+
+<div id="logoText" >
+<h1>LOSING IS NOT AN OPTION</h1>
+<h2>WE DESIGN EXPERIENCES</h2>
+<h3>TO HELP YOU WIN</h3>
+
+</div>
+
+<div id="logoBox">
+
+<h1><a href="philosophy.html">LET'S CREATE</a></h1>
+
+
+
+
+</div>
+
+<div id="scrollDown">
+
+</div>
+
+<div class="is-anchored">
+
+  <div id="panel-main" class="panel">
+<div id ="panelText">
+<h1>We Build Creative Solutions to Marketing Problems</h1>
+</div>
+  </div>
+
+
+
+</div>
+
+<header>
+<div id = "panelOne">
+  <nav>
+    <ul>
+
+
+      <li><a class="Work" href="work.html"></a></li>
+      <li><a class="Philosophy" href="philosophy.html">PHILOSOPHY</a></li>
+      <li><a class="Contact" href="contact.html">CONTACT</a></li>
+
+    </ul>
+  </nav>
+  </div>
+</header>
+
+<div class = "menu">
+    <span class="menu-global menu-top"></span>
+    <span class="menu-global menu-middle"></span>
+    <span class="menu-global menu-bottom"></span>
+</div>
+
+<canvas id="myCanvas" width= "100%" height="100%"></canvas>
+
+
+
+
+<script>
+var Menu = {
+
+el: {
+ham: $('.menu'),
+menuTop: $('.menu-top'),
+menuMiddle: $('.menu-middle'),
+menuBottom: $('.menu-bottom')
+},
+
+init: function() {
+Menu.bindUIactions();
+},
+
+bindUIactions: function() {
+Menu.el.ham
+    .on(
+      'click',
+    function(event) {
+    Menu.activateMenu(event);
+    event.preventDefault();
+  }
+);
+},
+
+activateMenu: function() {
+Menu.el.menuTop.toggleClass('menu-top-click');
+Menu.el.menuMiddle.toggleClass('menu-middle-click');
+Menu.el.menuBottom.toggleClass('menu-bottom-click');
+}
+};
+
+Menu.init();
+
+
+
+</script>
+<script>
+    $(document).ready(function(){
+        $(".menu").click(function(){
+                $("#panelOne").slideToggle("slow" );
+    });
+});
+</script>
+<script type="javascript/paperscript" canvas="myCanvas">
+var canvas = $('canvas')[0].getContext("2D");
+
+canvas.beginPath();
+
+canvas.arc(100, 100, 15, 0, Math.PI*2, true);
+
+
+canvas.closePath();
+
+canvas.fill(255,0,0);
+
+</script>
+
+  </body>
+
+
+
+
+</html>

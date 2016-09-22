@@ -1,0 +1,826 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+/*
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+*/
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+@media only screen and (max-width:1920px){
+    body{
+    background-color:rgb(0,0,0);
+    max-width:1920px;
+    height:auto;
+
+    }
+
+
+    video{
+      position:fixed;
+      width:1920px;
+      height:auto;
+      margin-top: -325px;
+
+    }
+    #logoText{
+      display:inline;
+      position:fixed;
+      margin-top:410px;
+      margin-left:480px;
+      text-align:center;
+      font-size:80px;
+      font-family: 'Kanit', sans-serif;
+      color:rgb(255,83, 13);
+      cursor:pointer;
+    }
+
+    #logoBox{
+    display:inline;
+    position: fixed;
+    margin-top: 670px;
+    margin-left:800px;
+    width:250px;
+    height:35px;
+    padding:10px, 10px, 5px, 5px;
+    padding-top: 10px;
+    padding-left:80px;
+    text-align:center;
+    background-color:rgba(0,0,0, .5);
+    border: 3px solid;
+    border-color: rgb(255,255, 255);
+    border-radius:25px;
+    font-size:25px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    cursor:pointer;
+    }
+
+
+
+    @import "compass/css3";
+    .menu {
+      cursor: pointer;
+      margin-left: 1850px;
+      margin-top:-10px;
+      padding-left: 1.25em;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+
+
+    width: 1280px;
+    height:50px;
+    background-color:none;
+
+
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+
+    margin-left: 1630px;
+    margin-top:-10px;
+    width:1280px;
+    height:20px;
+    background:rgb(0,0,0,50);
+    text-align:right;
+
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Graduate', cursive;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+
+    padding:5px;
+    text-align:right;
+
+
+    }
+
+    a{
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    }
+
+
+
+}
+@media only screen  and  (max-width:1350px){
+    body{
+    background-color:rgb(0,0,0);
+    max-width:1350px;
+    height:auto;
+
+    }
+
+
+
+    video{
+      position:fixed;
+      width:1350;
+      height:auto;
+      margin-top: -325px;
+
+    }
+
+    #logoText{
+      display:inline;
+      position:fixed;
+      margin-top:210px;
+      margin-left:130px;
+      text-align:center;
+      font-size:80px;
+      font-family: 'Kanit', sans-serif;
+      color:rgb(255,83, 13);
+      cursor:pointer;
+    }
+
+    #logoBox{
+    display:inline;
+    position: fixed;
+    margin-top: 470px;
+    margin-left:485px;
+    width:250px;
+    height:35px;
+    padding:10px, 10px, 5px, 5px;
+    padding-top: 10px;
+    padding-left:80px;
+    text-align:center;
+    background-color:rgba(0,0,0, .5);
+    border: 3px solid;
+    border-color: rgb(255,255, 255);
+    border-radius:25px;
+    font-size:25px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    cursor:pointer;
+    }
+
+#canvas{
+
+    display:inline;
+    position:fixed;
+}
+
+    @import "compass/css3";
+    .menu {
+      cursor: pointer;
+      margin-left: 1218px;
+      margin-top:-10px;
+      padding-left: 1.25em;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+
+
+    width: 1280px;
+    height:50px;
+    background-color:none;
+
+
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+
+    margin-left: 1000px;
+    margin-top:-10px;
+    width:1280px;
+    height:20px;
+    background:rgb(0,0,0,50);
+    text-align:right;
+
+    font-family: 'Lato', sans-serif;
+
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+
+    padding:5px;
+    text-align:right;
+
+
+    }
+
+    a{
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    }
+}
+
+
+@media only screen and (max-width:1000px){
+
+    body{
+    background-color:rgb(0,0,0);
+    max-width:1000px;
+    height:100%;
+
+    }
+
+
+    #backgroundTwo{
+      position:fixed;
+      width:1000px;
+      height:1400px;
+
+    }
+    #logoText{
+      display:inline;
+      position:fixed;
+      margin-top:210px;
+      margin-left:125px;
+      text-align:center;
+      font-size:60px;
+      font-family: 'Kanit', sans-serif;
+      color:rgb(255,83, 13);
+      cursor:pointer;
+    }
+
+    #logoBox{
+    display:inline;
+    position: fixed;
+    margin-top: 410px;
+    margin-left:325px;
+    width:250px;
+    height:35px;
+    padding:10px, 10px, 5px, 5px;
+    padding-top: 10px;
+    padding-left:80px;
+    text-align:center;
+    background-color:rgba(0,0,0, .5);
+    border: 3px solid;
+    border-color: rgb(255,255, 255);
+    border-radius:25px;
+    font-size:25px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    cursor:pointer;
+    }
+
+
+
+    @import "compass/css3";
+    .menu {
+      cursor: pointer;
+      margin-left: 938px;
+      margin-top:-10px;
+      padding-left: 1.25em;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+
+
+    width: 1280px;
+    height:50px;
+    background-color:none;
+
+
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+
+    margin-left: 700px;
+    margin-top:-10px;
+    width:1280px;
+    height:20px;
+    background:rgb(0,0,0,50);
+    text-align:right;
+
+    font-family: 'Lato', sans-serif;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+
+    padding:5px;
+    text-align:right;
+
+
+    }
+
+    a{
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    }
+    }
+@media only screen and (max-width:736px){
+
+        body{
+        background-color:rgb(0,0,0);
+        max-width:1000px;
+        height:100%;
+
+        }
+
+
+        #backgroundTwo{
+          position:fixed;
+          width:1000px;
+          height:1400px;
+
+        }
+        #logoText{
+          display:inline;
+          position:fixed;
+          margin-top:210px;
+          margin-left:105px;
+          text-align:center;
+          font-size:40px;
+          font-family: 'Kanit', sans-serif;
+          color:rgb(255,83, 13);
+          cursor:pointer;
+        }
+
+        #logoBox{
+        display:inline;
+        position: fixed;
+        margin-top: 340px;
+        margin-left:220px;
+        width:180px;
+        height:30px;
+        padding:10px, 10px, 5px, 5px;
+        padding-top: 10px;
+        padding-left:63px;
+        text-align:center;
+        background-color:rgba(0,0,0, .5);
+        border: 3px solid;
+        border-color: rgb(255,255, 255);
+        border-radius:25px;
+        font-size:20px;
+        color: rgb(255,255,255);
+        font-family: 'Kanit', sans-serif;
+        cursor:pointer;
+        }
+
+
+
+        @import "compass/css3";
+        .menu {
+          cursor: pointer;
+          margin-left: 630px;
+          margin-top:-10px;
+          padding-left: 1.25em;
+          position: fixed;
+          width: 10px;
+          height: 5px;
+        }
+        .menu-global {
+          backface-visibility: hidden;
+          position: absolute;
+          left: 0;
+          border-top: 7px solid white;
+          width: 50px;
+
+          transition: 0.55s;
+        }
+        .menu-top {
+          top: 0;
+        }
+        .menu-middle {
+          top: 9px;
+        }
+        .menu-bottom {
+          top: 18px;
+        }
+        .menu-top-click {
+          backface-visibility: hidden;
+          top: 15px;
+          transform: rotate(50deg);
+          transition: 0.55s 0.5s;
+        }
+        .menu-middle-click {
+          opacity: 0;
+        }
+        .menu-bottom-click {
+          backface-visibility: hidden;
+          top: 15px;
+          transform: rotate(-410deg);
+          transition: 0.55s 0.5s;
+        }
+
+        #panelOne{
+        margin-top:5px;
+        display: none;
+        position:fixed;
+
+
+        width: 1280px;
+        height:50px;
+        background-color:none;
+
+
+
+        }
+
+        ul{
+        float:left;
+        position:fixed;
+        display:inline;
+        padding-bottom:9px;
+
+        margin-left: 700px;
+        margin-top:-10px;
+        width:1280px;
+        height:20px;
+        background:rgb(0,0,0,50);
+        text-align:right;
+
+        font-family: 'Lato', sans-serif;
+        color:rgb(255,255,255);
+        text-decoration:none;
+        border:none;
+        border-radius:25px;
+        }
+
+        li{
+        float:left;
+        margin-left:2px;
+        margin-top:2px;
+
+        padding:5px;
+        text-align:right;
+
+
+        }
+
+        a{
+        float:left;
+        padding-top:0px;
+        margin-left:2px;
+
+        text-align:right;
+        color:rgb(255,255,255);
+        text-decoration:none;
+        }
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:400px){
+
+            body{
+            background-color:rgb(0,0,0);
+            max-width:1000px;
+            height:100%;
+
+            }
+
+
+            #backgroundTwo{
+              position:fixed;
+              width:1000px;
+              height:1400px;
+
+            }
+            #logoText{
+              display:inline;
+              position:fixed;
+              margin-top:210px;
+              margin-left:55px;
+              text-align:center;
+              font-size:24px;
+              font-family: 'Kanit', sans-serif;
+              color:rgb(255,83, 13);
+              cursor:pointer;
+            }
+
+            #logoBox{
+            display:inline;
+            position: fixed;
+            margin-top: 290px;
+            margin-left:140px;
+            width:100px;
+            height:20px;
+            padding:5px, 5px, 2px, 2px;
+            padding-top: 10px;
+            padding-left:9px;
+            text-align:center;
+            background-color:rgba(0,0,0, .5);
+            border: 3px solid;
+            border-color: rgb(255,255, 255);
+            border-radius:25px;
+            font-size:14px;
+            color: rgb(255,255,255);
+            font-family: 'Kanit', sans-serif;
+            cursor:pointer;
+            }
+
+
+
+            @import "compass/css3";
+            .menu {
+              cursor: pointer;
+              margin-left: 330px;
+              margin-top:-10px;
+              padding-left: 1.25em;
+              position: fixed;
+              width: 10px;
+              height: 5px;
+            }
+            .menu-global {
+              backface-visibility: hidden;
+              position: absolute;
+              left: 0;
+              border-top: 7px solid white;
+              width: 50px;
+
+              transition: 0.55s;
+            }
+            .menu-top {
+              top: 0;
+            }
+            .menu-middle {
+              top: 9px;
+            }
+            .menu-bottom {
+              top: 18px;
+            }
+            .menu-top-click {
+              backface-visibility: hidden;
+              top: 15px;
+              transform: rotate(50deg);
+              transition: 0.55s 0.5s;
+            }
+            .menu-middle-click {
+              opacity: 0;
+            }
+            .menu-bottom-click {
+              backface-visibility: hidden;
+              top: 15px;
+              transform: rotate(-410deg);
+              transition: 0.55s 0.5s;
+            }
+
+            #panelOne{
+            margin-top:5px;
+            display: none;
+            position:fixed;
+
+
+            width: 1280px;
+            height:50px;
+            background-color:none;
+
+
+
+            }
+
+            ul{
+            float:left;
+            position:fixed;
+            display:inline;
+            padding-bottom:9px;
+
+            margin-left: 110px;
+            margin-top:-10px;
+            width:1280px;
+            height:20px;
+            background:rgb(0,0,0,50);
+            text-align:right;
+
+            font-family: 'Lato', sans-serif;
+            color:rgb(255,255,255);
+            text-decoration:none;
+            border:none;
+            border-radius:25px;
+            font-size: 16px;
+            }
+
+            li{
+            float:left;
+            margin-left:2px;
+            margin-top:2px;
+
+            padding:5px;
+            text-align:right;
+
+
+            }
+
+            a{
+            float:left;
+            padding-top:0px;
+            margin-left:2px;
+
+            text-align:right;
+            color:rgb(255,255,255);
+            text-decoration:none;
+            }
+
+
+}

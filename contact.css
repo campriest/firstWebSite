@@ -1,0 +1,920 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+/*
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+*/
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+@media only screen and (max-width:1920px){
+
+    body{
+    background-color:rgb(0,0,0);
+    width:1920px;
+    height:auto;
+    }
+
+    @import "compass/css3";
+
+    .menu{
+      cursor: pointer;
+      margin-left: 1860px;
+      margin-top:2px;
+      padding-left: 17px;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+    width: 1280px;
+    height:50px;
+    background-color:none;
+    cursor: pointer;
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+    margin-left: 1680px;
+    margin-top:2px;
+    width:1280px;
+    height:20px;
+    background:rgb(0,0,0);
+    text-align:right;
+    font-family: 'Arimo', sans-serif;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+    padding:5px;
+    text-align:right;
+    }
+
+    a {
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+    #textOne{
+    position: fixed;
+    float:left;
+    margin-left: 495px;
+    padding-top:140px;
+    font-size:60px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    }
+
+    form{
+    position:fixed;
+    float:left;
+    margin-left:780px;
+    max-width:420px;
+    padding-top: 450px;
+    }
+
+    .feedback-input {
+      color:white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight:500;
+      font-size: 18px;
+      border-radius: 5px;
+      border-color:rgb(255,0,50);
+      line-height: 22px;
+      background-color: transparent;
+      border:2px solid rgb(0, 0, 0);
+      transition: all 0.3s;
+      padding: 13px;
+      margin-bottom: 15px;
+      width:100%;
+      box-sizing: border-box;
+      outline:0;
+    }
+
+    .feedback-input:focus {
+        border:2px solid ;
+
+
+    }
+
+    textarea {
+      height: 100px;
+
+      line-height: 150%;
+      resize:vertical;
+    }
+
+    [type="submit"] {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      background:none;
+      border-radius:10px;
+      border:2px, solid;
+      border-color: rgb(255,0,50);
+      cursor:pointer;
+      color:white;
+      font-size:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+    }
+    [type="submit"]:hover {
+     background:rgba(255,255,255, .13);
+     }
+
+
+
+    }
+
+
+
+
+@media only screen and (max-width:1350px){
+
+body{
+background-color:rgb(0,0,0);
+width:1350px;
+height:auto;
+}
+
+@import "compass/css3";
+
+.menu{
+  cursor: pointer;
+  margin-left: 1220px;
+  margin-top:6px;
+  padding-left: 17px;
+  position: fixed;
+  width: 10px;
+  height: 5px;
+}
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 7px solid white;
+  width: 50px;
+
+  transition: 0.55s;
+}
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 9px;
+}
+.menu-bottom {
+  top: 18px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
+
+#panelOne{
+margin-top:-4px;
+display: none;
+position:fixed;
+width: 1350px;
+height:50px;
+background-color:none;
+cursor: pointer;
+
+}
+
+ul{
+float:left;
+position:fixed;
+display:inline;
+padding-bottom:9px;
+margin-left: 1040px;
+margin-top:18px;
+width:1280px;
+height:20px;
+background:rgb(0,0,0);
+text-align:right;
+font-family: 'Arimo', sans-serif;
+color:rgb(255,255,255);
+text-decoration:none;
+border:none;
+border-radius:25px;
+}
+
+li{
+float:left;
+margin-left:2px;
+margin-top:2px;
+padding:5px;
+text-align:right;
+}
+
+a {
+float:left;
+padding-top:0px;
+margin-left:2px;
+text-align:right;
+color:rgb(255,255,255);
+text-decoration:none;
+cursor:pointer;
+}
+
+#textOne{
+position: fixed;
+float:left;
+margin-left: 130px;
+padding-top:80px;
+font-size:60px;
+color: rgb(255,255,255);
+font-family: 'Kanit', sans-serif;
+}
+
+form{
+position:fixed;
+float:left;
+margin-left:470px;
+max-width:420px;
+padding-top: 250px;
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color:rgb(255,0,50);
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgb(0, 0, 0);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+    border:2px solid ;
+
+
+}
+
+textarea {
+  height: 100px;
+
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background:none;
+  border-radius:10px;
+  border:2px, solid;
+  border-color: rgb(255,0,50);
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover {
+ background:rgba(255,255,255, .13);
+ }
+
+
+
+}
+@media only screen and (max-width:1000px){
+    body{
+    background-color:rgb(0,0,0);
+    width:1000px;
+    height:auto;
+    }
+
+    @import "compass/css3";
+
+    .menu{
+      cursor: pointer;
+      margin-left: 930px;
+      margin-top:2px;
+      padding-left: 17px;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+    width: 1000px;
+    height:50px;
+    background-color:none;
+    cursor: pointer;
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+    margin-left: 740px;
+    margin-top:2px;
+    width:1000px;
+    height:20px;
+    background:rgb(0,0,0);
+    text-align:right;
+    font-family: 'Arimo', sans-serif;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+    padding:5px;
+    text-align:right;
+    }
+
+    a {
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+    #textOne{
+    position: fixed;
+    float:left;
+    margin-left: 83px;
+    padding-top:50px;
+    font-size:50px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    }
+
+    form{
+    position:fixed;
+    float:left;
+    margin-left:290px;
+    max-width:420px;
+    padding-top: 250px;
+    }
+
+    .feedback-input {
+      color:white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight:500;
+      font-size: 18px;
+      border-radius: 5px;
+      border-color:rgb(255,0,50);
+      line-height: 22px;
+      background-color: transparent;
+      border:2px solid rgb(0, 0, 0);
+      transition: all 0.3s;
+      padding: 13px;
+      margin-bottom: 15px;
+      width:100%;
+      box-sizing: border-box;
+      outline:0;
+    }
+
+    .feedback-input:focus {
+        border:2px solid ;
+
+
+    }
+
+    textarea {
+      height: 100px;
+
+      line-height: 150%;
+      resize:vertical;
+    }
+
+    [type="submit"] {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      background:none;
+      border-radius:10px;
+      border:2px, solid;
+      border-color: rgb(255,0,50);
+      cursor:pointer;
+      color:white;
+      font-size:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+    }
+    [type="submit"]:hover {
+     background:rgba(255,255,255, .13);
+     }
+
+    }
+
+
+
+
+@media only screen and (max-width:736px){
+    body{
+    background-color:rgb(0,0,0);
+    width:736px;
+    height:auto;
+    }
+
+    @import "compass/css3";
+
+    .menu{
+      cursor: pointer;
+      margin-left: 670px;
+      margin-top:2px;
+      padding-left: 17px;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+    width: 736px;
+    height:50px;
+    background-color:none;
+    cursor: pointer;
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+    margin-left: 480px;
+    margin-top:2px;
+    width:1000px;
+    height:20px;
+    background:rgb(0,0,0);
+    text-align:right;
+    font-family: 'Arimo', sans-serif;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+    padding:5px;
+    text-align:right;
+    }
+
+    a {
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+    #textOne{
+    position: fixed;
+    float:left;
+    margin-left: 100px;
+    padding-top:80px;
+    font-size:30px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    }
+
+    form{
+    position:fixed;
+    float:left;
+    margin-left:160px;
+    max-width:420px;
+    padding-top: 250px;
+    }
+
+    .feedback-input {
+      color:white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight:500;
+      font-size: 18px;
+      border-radius: 5px;
+      border-color:rgb(255,0,50);
+      line-height: 22px;
+      background-color: transparent;
+      border:2px solid rgb(0, 0, 0);
+      transition: all 0.3s;
+      padding: 13px;
+      margin-bottom: 15px;
+      width:100%;
+      box-sizing: border-box;
+      outline:0;
+    }
+
+    .feedback-input:focus {
+        border:2px solid ;
+
+
+    }
+
+    textarea {
+      height: 100px;
+
+      line-height: 150%;
+      resize:vertical;
+    }
+
+    [type="submit"] {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      background:none;
+      border-radius:10px;
+      border:2px, solid;
+      border-color: rgb(255,0,50);
+      cursor:pointer;
+      color:white;
+      font-size:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+    }
+    [type="submit"]:hover {
+     background:rgba(255,255,255, .13);
+     }
+
+    }
+
+
+
+
+@media only screen and (max-width:400px){
+
+    body{
+    background-color:rgb(0,0,0);
+    width:400px;
+    height:auto;
+    }
+
+    @import "compass/css3";
+
+    .menu{
+      cursor: pointer;
+      margin-left: 340px;
+      margin-top:2px;
+      padding-left: 17px;
+      position: fixed;
+      width: 10px;
+      height: 5px;
+    }
+    .menu-global {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0;
+      border-top: 7px solid white;
+      width: 50px;
+
+      transition: 0.55s;
+    }
+    .menu-top {
+      top: 0;
+    }
+    .menu-middle {
+      top: 9px;
+    }
+    .menu-bottom {
+      top: 18px;
+    }
+    .menu-top-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+    .menu-middle-click {
+      opacity: 0;
+    }
+    .menu-bottom-click {
+      backface-visibility: hidden;
+      top: 15px;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
+
+    #panelOne{
+    margin-top:5px;
+    display: none;
+    position:fixed;
+    width: 400px;
+    height:50px;
+    background-color:none;
+    cursor: pointer;
+
+    }
+
+    ul{
+    float:left;
+    position:fixed;
+    display:inline;
+    padding-bottom:9px;
+    margin-left:158px;
+    margin-top:2px;
+    width:400px;
+    height:20px;
+    background:rgb(0,0,0);
+    text-align:right;
+    font-family: 'Arimo', sans-serif;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    border:none;
+    border-radius:25px;
+    }
+
+    li{
+    float:left;
+    margin-left:2px;
+    margin-top:2px;
+    padding:5px;
+    text-align:right;
+    }
+
+    a {
+    float:left;
+    padding-top:0px;
+    margin-left:2px;
+    text-align:right;
+    color:rgb(255,255,255);
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+    #textOne{
+    position: fixed;
+    float:left;
+    margin-left: 35px;
+    padding-top:80px;
+    font-size:20px;
+    color: rgb(255,255,255);
+    font-family: 'Kanit', sans-serif;
+    }
+
+    form{
+    position:fixed;
+    float:left;
+    margin-left:25px;
+    max-width:350px;
+    padding-top: 250px;
+    }
+
+    .feedback-input {
+      color:white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight:500;
+      font-size: 18px;
+      border-radius: 5px;
+      border-color:rgb(255,0,50);
+      line-height: 22px;
+      background-color: transparent;
+      border:2px solid rgb(0, 0, 0);
+      transition: all 0.3s;
+      padding: 13px;
+      margin-bottom: 15px;
+      width:100%;
+      box-sizing: border-box;
+      outline:0;
+    }
+
+    .feedback-input:focus {
+        border:2px solid ;
+
+
+    }
+
+    textarea {
+      height: 100px;
+
+      line-height: 150%;
+      resize:vertical;
+    }
+
+    [type="submit"] {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      background:none;
+      border-radius:10px;
+      border:2px, solid;
+      border-color: rgb(255,0,50);
+      cursor:pointer;
+      color:white;
+      font-size:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+    }
+    [type="submit"]:hover {
+     background:rgba(255,255,255, .13);
+     }
+
+    }
+
+
+
+
+}
